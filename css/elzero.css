@@ -1096,6 +1096,105 @@ ul {
 }
 
 /* End Our Skills */
+/* Start Work Steps */
+.work-steps {
+    padding-top: var(--main-section-padding);
+    padding-bottom: var(--main-section-padding);
+    background-color: var(--section-background);
+    position: relative;
+}
+
+.work-steps .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+@media (max-width: 991px) {
+    .work-steps .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.work-steps .image {
+    max-width: 100%;
+}
+
+.work-steps .info .box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: #f6f5f5;
+    padding: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+    .work-steps .info .box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.work-steps .info .box::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background-color: #ededed;
+    z-index: -1;
+    transition: var(--main-transition-duration);
+    -webkit-transition: var(--main-transition-duration);
+    -moz-transition: var(--main-transition-duration);
+    -ms-transition: var(--main-transition-duration);
+    -o-transition: var(--main-transition-duration);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.work-steps .info .box:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.work-steps .info .box img {
+    max-width: 64px;
+}
+
+.work-steps .info .box h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.work-steps .info .box p {
+    line-height: 1.7;
+    color: #777;
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 991px) {
+    .work-steps .info .box p {
+        margin-top: 15px;
+    }
+}
+
+/* End Work Steps */
 /* Start Animation */
 @keyframes up-and-down {
 
