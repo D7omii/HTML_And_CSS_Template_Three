@@ -1422,12 +1422,12 @@ ul {
 
 .pricing .box::before {
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 .pricing .box::after {
     bottom: 0;
-    right: 0;
+    left: 0;
 }
 
 .pricing .box:hover::before,
@@ -1461,6 +1461,15 @@ ul {
     border-color: transparent transparent white;
     left: 0;
     bottom: 0;
+    transition: var(--main-transition-duration);
+    -webkit-transition: var(--main-transition-duration);
+    -moz-transition: var(--main-transition-duration);
+    -ms-transition: var(--main-transition-duration);
+    -o-transition: var(--main-transition-duration);
+}
+
+.pricing .box.popular:hover .label::before {
+    border-color: transparent transparent #f6f6f6;
 }
 
 .pricing .box .title {
