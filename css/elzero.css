@@ -1733,7 +1733,7 @@ ul {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    animation: change;
+    animation: change-background 10s linear infinite;
     -webkit-animation: change-background 10s linear infinite;
 }
 
